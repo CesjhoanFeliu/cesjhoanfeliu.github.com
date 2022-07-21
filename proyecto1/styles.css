@@ -5,29 +5,40 @@ body{
     --fuenteprincipal: 'Fraunces', serif;
 
     --fuentesecundaria: 'Montserrat', sans-serif;
+    --colorperrafo: hsl(228, 12%, 48%);
+    --colorfondo: hsl(0, 0%, 100%);
 }
-
+h1{
+    font-family: var(--fuenteprincipal);
+}
+img{
+    width: auto;
+    height: 100%;
+}
 .contenedor{
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 .contenido {
     display: flex;
     width: 700px;
     height: 500px;
+    background-color: var(--colorfondo);
+}
+.precios, span, p{
+    font-family: var(--fuentesecundaria);
+    color: var(--colorperrafo);
 }
 
-img{
-    width: auto;
-    height: 100%;
-}
 
 .texto{
     display: inline-block;
     width: 50%;
     height: 100%;
-    background-color: red;
+
+    margin: 40px;
 }
 
 .precios{
@@ -35,6 +46,10 @@ img{
 }
 .descuento{
     display: inline-block;
+}
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 /* The designs were created to the following widths:
