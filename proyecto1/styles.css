@@ -7,9 +7,14 @@ body{
     --fuentesecundaria: 'Montserrat', sans-serif;
     --colorperrafo: hsl(228, 12%, 48%);
     --colorfondo: hsl(0, 0%, 100%);
+    --colorprecio: hsl(158, 36%, 37%);
+    --colortitulo: hsl(212, 21%, 14%); 
 }
 h1{
     font-family: var(--fuenteprincipal);
+    color: var(--colortitulo);
+    font-size:2.5em;
+    line-height: 40px;
 }
 img{
     width: auto;
@@ -31,25 +36,42 @@ align-items: center;
     font-family: var(--fuentesecundaria);
     color: var(--colorperrafo);
 }
-
+.textomain{
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 270px;
+    font-size: 0.9em;
+    line-height: 25px;
+}
 
 .texto{
     display: inline-block;
     width: 50%;
     height: 100%;
-
-    margin: 40px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 .precios{
+    font-size: 2.5em;
+    color: var(--colorprecio);
+    font-family: var(--fuenteprincipal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .descuento{
     display: inline-block;
+    font-size: 18px;
+    text-decoration: line-through;
+    padding: 1em;
 }
 .perfume{
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 /* The designs were created to the following widths:
