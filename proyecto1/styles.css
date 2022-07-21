@@ -1,14 +1,40 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+:root{
+    --fuenteprincipal: 'Fraunces', serif;
+
+    --fuentesecundaria: 'Montserrat', sans-serif;
+}
+
 .contenedor{
 display: flex;
 justify-content: center;
 align-items: center;
 }
 .contenido {
-
+    display: flex;
+    width: 700px;
+    height: 500px;
 }
-.image{
+
+img{
     width: auto;
+    height: 100%;
+}
+
+.texto{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.precios{
     
+}
+.descuento{
+    display: inline-block;
 }
 
 /* The designs were created to the following widths:
