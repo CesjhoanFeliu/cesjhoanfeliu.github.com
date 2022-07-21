@@ -1,6 +1,14 @@
 body{
     background-color: hsl(30, 38%, 92%);
+  
     
+}
+html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
 }
 :root{
     --fuenteprincipal: 'Fraunces', serif;
@@ -34,6 +42,7 @@ svg{
 display: flex;
 justify-content: center;
 align-items: center;
+
 
 
 }
