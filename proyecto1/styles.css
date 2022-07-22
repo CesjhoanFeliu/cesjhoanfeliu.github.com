@@ -1,138 +1,183 @@
-body{
-    background-color: hsl(30, 38%, 92%);
-  
-    
+body {
+  background-color: hsl(30, 38%, 92%);
 }
-html{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-:root{
-    --fuenteprincipal: 'Fraunces', serif;
+:root {
+  --fuenteprincipal: "Fraunces", serif;
 
-    --fuentesecundaria: 'Montserrat', sans-serif;
-    --colorperrafo: hsl(228, 12%, 48%);
-    --colorfondo: hsl(0, 0%, 100%);
-    --colorprecio: hsl(158, 36%, 37%);
-    --colortitulo: hsl(212, 21%, 14%); 
-    --colorblanco: hsl(0, 0%, 100%);
-    --colorhover: hsl(158, 100%, 13%);
+  --fuentesecundaria: "Montserrat", sans-serif;
+  --colorperrafo: hsl(228, 12%, 48%);
+  --colorfondo: hsl(0, 0%, 100%);
+  --colorprecio: hsl(158, 36%, 37%);
+  --colortitulo: hsl(212, 21%, 14%);
+  --colorblanco: hsl(0, 0%, 100%);
+  --colorhover: hsl(158, 100%, 13%);
 }
-h1{
-    font-family: var(--fuenteprincipal);
-    color: var(--colortitulo);
-    font-size:2.5em;
-    line-height: 40px;
+h1 {
+  font-family: var(--fuenteprincipal);
+  color: var(--colortitulo);
+  font-size: 2.5em;
+  line-height: 40px;
 }
-img{
-    width: auto;
-    height: 100%;
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px;
+img {
+  content: url("./images/image-product-desktop.jpg");
+  width: auto;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-svg{
-    padding-right: 0.8em;
+svg {
+  padding-right: 0.8em;
 }
 
-
-.contenedor{
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contenido {
-    display: flex;
-    width: 700px;
-    height: 500px;
-    background-color: var(--colorfondo);
-    border-top-right-radius:10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius:10px;
-    border-bottom-left-radius: 10px;
+  display: flex;
+  width: 700px;
+  height: 500px;
+  background-color: var(--colorfondo);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.precios, span, p{
-    font-family: var(--fuentesecundaria);
-    color: var(--colorperrafo);
+.precios,
+span,
+p {
+  font-family: var(--fuentesecundaria);
+  color: var(--colorperrafo);
 }
-.textomain{
-    letter-spacing: 1px;
-    text-decoration: none;
-    width: 270px;
-    font-size: 0.9em;
-    line-height: 25px;
-}
-
-.texto{
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    margin-top: 20px;
-    margin-right: 100px;
-    margin-left: 40px;
-    margin-bottom: 40px;
+.textomain {
+  letter-spacing: 1px;
+  text-decoration: none;
+  width: 270px;
+  font-size: 0.9em;
+  line-height: 25px;
 }
 
-.precios{
-    font-size: 2.5em;
-    color: var(--colorprecio);
-    font-family: var(--fuenteprincipal);
-    display: flex;
-    align-items: center;
+.texto {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.precios {
+  font-size: 2.5em;
+  color: var(--colorprecio);
+  font-family: var(--fuenteprincipal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.descuento {
+  display: inline-block;
+  font-size: 18px;
+  text-decoration: line-through;
+  padding: 1em;
+}
+.perfume {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.carrito {
+  margin-top: 1.5em;
+  font-family: var(--fuentesecundaria);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  background-color: var(--colorprecio);
+  border-radius: 10px;
+  color: var(--colorblanco);
+  display: flex;
+  align-items: center;
+  border: none;
+  transition-duration: 0.4s;
+  font-size: 14.1px;
+}
+.carrito:hover {
+  background-color: var(--colorhover);
+}
+
+.flexcarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 720px) {
+  .contenido {
+    flex-direction: column;
+    width: 350px;
+    height: auto;
     justify-content: center;
-    
-}
-.descuento{
-    display: inline-block;
-    font-size: 18px;
-    text-decoration: line-through;
+    align-items: center;
+  }
+  .contenedor{
+    height: 1000px;
+  }
+  h1 {
+    font-size: 2em;
+
+  }
+  img {
+    content: url("./images/image-product-mobile.jpg");
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .flexcarrito {
+    text-align: center;
+  }
+  .carrito {
+    width: 80%;
     padding: 1em;
-}
-.perfume{
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-.carrito{
- margin-top: 1.5em; 
-font-family: var(--fuentesecundaria);
-padding-top: 1rem;
-padding-bottom: 1rem;
-padding-right: 5rem;
-padding-left: 5rem;
-background-color: var(--colorprecio);
-border-radius: 10px;
-color: var(--colorblanco);
-display: flex;
-align-items: center;
-border: none;
-transition-duration: 0.4s;
-font-size: 14.1px;
-
-
-}
-.carrito:hover{
-    background-color: var(--colorhover);
-}
-
-.flexcarrito{
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
+    margin-bottom: 20px;
+    margin-top: 10px;
 
-@media(max-width:720px){
-    .contenido{
-        display: flex;
-        flex-direction: column;
-    }
-    img{
-        height: 10em;
-    }
+  }
+
+  .texto {
+    width: 100%;
+    margin: 0;
+  }
+  .perfume {
+    font-family: var(--fuentesecundaria);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 0.8em;
+    padding-top: 10px;
+  }
+  .textomain {
+    width: auto;
+    line-height: 25px;
+  }
+  .precios{
+    justify-content: flex-start;
+    
+  }
+   .perfume,h1,.textomain,.precios{
+    margin-left: 30px;
+    margin-right: 30px;
+   
+   }
 }
 
 /* The designs were created to the following widths:
