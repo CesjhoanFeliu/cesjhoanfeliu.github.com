@@ -5,14 +5,49 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
+    background-color: var(--fondogris);
 }
 html{
     height: 100%;
     width: 100%;
 }
-.contenedor{
+h1{
+    font-family: var(--letraprincipal);
+}
+img{
+    width:80%;
+    height: auto;
+    margin: 10px;
+
+}
+:root{
+    --fondoblanco:hsl(0, 0%, 100%);
+    --colorgris:hsl(212, 45%, 89%);
+    --fondogris:hsl(220, 15%, 55%);
+    --colorazul:hsl(218, 44%, 22%);
+    --letraprincipal: 'Outfit', sans-serif;
 }
 
+.contenedor{
+   width: 450px;
+   height: 450px;
+}
+.contenido{
+    background-color: var(--fondoblanco);
+    
+}
+.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+.texto{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
